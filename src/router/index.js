@@ -30,9 +30,14 @@ const routes = [
   },
   {
     path: '/vuex',
-    name: 'vuex',
+    name: 'Vuex',
     component: () => import('../views/Vuex.vue')
-  }
+  },
+  {
+    path: '/watermark',
+    name: 'Watermark',
+    component: () => import('../views/Watermark.vue')
+  },
 ]
 
 const router = new VueRouter({

@@ -7,10 +7,16 @@ import axios from 'axios'
 Vue.prototype.$axios=axios;
 Vue.config.productionTip = false
 
-store.dispatch('getUserInfo');
-
 new Vue({
   router,
   store,
+  beforeCreate:function(){
+
+  },
+  created:function(){
+    store.dispatch('getUserInfo');
+    console.log('main created')
+    
+  },
   render: h => h(App)
 }).$mount('#app')

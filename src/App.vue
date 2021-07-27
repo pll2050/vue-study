@@ -5,7 +5,8 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/test">Test</router-link> |
       <router-link to="/sort">Sort</router-link> |
-      <router-link to="/vuex">Vuex</router-link>
+      <router-link to="/vuex">Vuex</router-link> |
+      <router-link to="/watermark">Watermark</router-link> |
     </div>
     <router-view/>
   </div>
