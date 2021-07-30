@@ -16,7 +16,6 @@ const store = new Vuex.Store({
         setUserInfo(state,data) {
             // state.count++
             state.userinfo = data;
-            console.log('mute',state.userinfo);
         }
     },
     actions: {

@@ -15,8 +15,6 @@ new Vue({
   },
   created:function(){
     store.dispatch('getUserInfo');
-    console.log('main created')
-    
   },
   render: h => h(App)
 }).$mount('#app')
