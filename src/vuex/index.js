@@ -34,8 +34,20 @@ const store = new Vuex.Store({
                 .then(function () {
                     // always executed
                 });
+        },
+        setCount:function(context){
+            context.commit('increment');
         }
+    },
+    getters:{
+        getUsers(state){
+            return state.userinfo;
+        },
+        getCount(state){
+            return state.count;
+        },
     }
+
 })
 
 export default store

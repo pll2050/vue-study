@@ -38,6 +38,11 @@ const routes = [
     name: 'Watermark',
     component: () => import('../views/Watermark.vue')
   },
+  {
+    path: '/style',
+    name: 'Style',
+    component: () => import('../views/Style.vue')
+  },
 ]
 
 const router = new VueRouter({

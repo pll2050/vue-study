@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './vuex'
 import axios from 'axios'
+import {getState} from './vuex/getter'
 
 Vue.prototype.$axios=axios;
 Vue.config.productionTip = false
@@ -10,6 +11,15 @@ Vue.config.productionTip = false
 new Vue({
   router,
   store,
+  computed:{
+    ...getState,
+    
+  },
+  watch:{
+    getCount:function(){
+      console.log('catch count')
+    }
+  },
   beforeCreate:function(){
 
   },

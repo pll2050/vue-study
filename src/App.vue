@@ -7,10 +7,21 @@
       <router-link to="/sort">Sort</router-link> |
       <router-link to="/vuex">Vuex</router-link> |
       <router-link to="/watermark">Watermark</router-link> |
+      <router-link to="/style">Style</router-link> |
     </div>
+    <button v-on:click="setCounter">SetCounter</button>
     <router-view/>
   </div>
 </template>
+<script>
+export default {
+  methods:{
+    setCounter:function(){
+      this.$store.dispatch('setCount');
+    }
+  }
+}
+</script>
 
 <style>
 #app {
